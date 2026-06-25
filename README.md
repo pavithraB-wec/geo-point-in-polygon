@@ -17,6 +17,7 @@ Complete example for:
 ├── app/
 │   ├── __init__.py
 │   └── main.py
+|   └── flask_app.py
 ├── sql/
 │   └── schema.sql
 ├── scripts/
