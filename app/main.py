@@ -8,9 +8,9 @@ load_dotenv()
 app = FastAPI(title="Geo Point in Polygon API")
 
 DB_CONFIG = {
-    "dbname": os.getenv("POSTGRES_DB", "polyogon-db"),
+    "dbname": os.getenv("POSTGRES_DB", "geopoly"),
     "user": os.getenv("POSTGRES_USER", "postgres"),
-    "password": os.getenv("POSTGRES_PASSWORD", "postgres123"),
+    "password": os.getenv("POSTGRES_PASSWORD", "postgres"),
     "host": os.getenv("POSTGRES_HOST", "localhost"),
     "port": os.getenv("POSTGRES_PORT", "5432"),
 }

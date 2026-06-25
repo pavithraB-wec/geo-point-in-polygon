@@ -73,14 +73,19 @@ python scripts/check_local.py
 python scripts/check_db.py
 ```
 
-## 6) Run API
+## 6) Run FastAPI
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Test:
+## 7) Run Flask
 ```bash
-curl "http://127.0.0.1:8000/check-point?lon=80.2750&lat=13.0870"
+python app/flask_app.py
+```
+
+Test Flask:
+```bash
+curl "http://127.0.0.1:5000/check-point?lon=80.2750&lat=13.0870"
 ```
 
 ## Notes
@@ -88,9 +93,9 @@ curl "http://127.0.0.1:8000/check-point?lon=80.2750&lat=13.0870"
 - `ST_Contains` checks whether the point is strictly inside the polygon.
 - If you want boundary points included, use `ST_Intersects` instead.
 
-## ✅ What this repo already provides
+## ✅ What repo already provides
 
-Your project already contains the right pieces for the assignment:
+project already contains the right pieces:
 
 - `sql/schema.sql` — table creation plus PostGIS setup
 - `scripts/check_db.py` — DB query using `ST_Contains`
@@ -137,7 +142,7 @@ USING GIST (geom);
 
 ---
 
-## 🧩 Insert a sample polygon
+## 🧩 Insert a polygon
 
 Use GeoJSON or WKT. Example GeoJSON insertion:
 ```sql
@@ -263,7 +268,7 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 ```
 
-Your code already reads these values in `app/main.py` and `scripts/check_db.py`.
+code already reads these values in `app/main.py` and `scripts/check_db.py`.
 
 ---
 
