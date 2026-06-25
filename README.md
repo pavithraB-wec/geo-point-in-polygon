@@ -227,12 +227,12 @@ should return one or more rows with `id` and `name` for matching polygons.
 
 ## 🧪 Sample input and output
 
-### Sample input
+### Input
 - Point: `lon=80.2750`, `lat=13.0870`
 - Stored polygon: a rectangle covering the area between
   `(80.2707, 13.0827)` and `(80.2807, 13.0927)`.
 
-### Sample output for FastAPI
+### Output for FastAPI
 ```json
 {
   "point": { "lon": 80.2750, "lat": 13.0870 },
@@ -243,7 +243,7 @@ should return one or more rows with `id` and `name` for matching polygons.
 }
 ```
 
-### Sample output for direct DB query
+### Output for direct DB query
 Rows returned:
 
 | id | name   |
