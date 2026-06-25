@@ -290,8 +290,3 @@ This is a correct implementation path for the assignment:
 - optionally use `ST_Intersects` for boundary-inclusion,
 - return matching polygon `id`/`name`.
 
-If you want, I can now turn this into a formal mini-project report with:
-- Objective
-- Tools Used
-- Methodology
-- Result
